@@ -4,9 +4,55 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="estilos.css">
+  <title>Cambiador-de-colores</title>
 </head>
+
 <body>
   
+  <header>
+
+    <div class="options option-colors">
+
+      <div class="option-colors__div1 bgShadow">
+        <span class="option-colors__span1 active-option">Finite Colors</span>
+      </div>
+      <div class="option-colors__div2 bgShadow">
+        <span class="option-colors__span2 ">Infinite colors</span>
+      </div>
+
+    </div>
+
+    <div class="options option-systems">
+
+      <div class=" option-systems__div1 bgShadow">
+        <span class="option-systems__span1">RGB</span>
+      </div>
+      <div class=" option-systems__div2 bgShadow">
+        <span class="option-systems__span2">RGBA</span>
+      </div>
+      <div class="option-systems__div3  bgShadow">
+        <span class="option-systems__span3  active-option">Hexadecimal</span>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <h1>
+      Background Color: <span class="textColor">#dbd8e3</span>
+    </h1>
+
+    <button  class="eject">
+      Click me
+    </button>
+
+    <h2 class="infoColors hidden"></h2>
+
+  </main>
+
+  <script src="cambiador.js"></script>
 </body>
 </html>
