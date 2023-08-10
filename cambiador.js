@@ -15,113 +15,113 @@ const d = document,
 
 function changeColor() {
   d.addEventListener("click", (e) => {
-    //Se selecciona la opción "Infinite colors"
+    //The option "Infinite colors" is selected
     if (e.target === infiniteColorsDiv || e.target === infiniteColorsSpan) {
       infiniteColorsSpan.classList.add("active-option");
       finiteColorsSpan.classList.remove("active-option");
 
-      //Mensaje para el sistema hexadecimal
+      //Message for hexadecimal system
       if (hexadecimalSpan.classList.contains("active-option")) {
         infoColors.classList.remove("hidden");
         infoColors.textContent = "Esta opción contiene 343 colores";
       }
 
-      //Mensaje para el sistema RGBA
+      //Message for the RGBA system
       if (rgbaSpan.classList.contains("active-option")) {
         infoColors.classList.remove("hidden");
         infoColors.textContent = "Esta opción contiene 67'108.864 colores";
       }
 
-      //Mensaje para el sistema RGB
+      //Message for RGB system
       if (rgbSpan.classList.contains("active-option")) {
          infoColors.classList.remove("hidden");
          infoColors.textContent = "Esta opción contiene 16'581.375 colores";
       }
     }
 
-    //Se selecciona la opción "Finite Colors"
+    //The "Finite Colors" option is selected
     if (e.target === finiteColorsDiv || e.target === finiteColorsSpan) {
       finiteColorsSpan.classList.add("active-option");
       infiniteColorsSpan.classList.remove("active-option");
 
-      //Mensaje para el sistema hexadecimal
+    //Message for the hexadecimal system
       if (hexadecimalSpan.classList.contains("active-option")) {
         infoColors.classList.remove("hidden");
         infoColors.textContent = "Esta opción contiene 27 colores";
       }
 
-      //Mensaje para el sistema RGBA
+      //Message to the RGBA system
       if (rgbaSpan.classList.contains("active-option")) {
         infoColors.classList.remove("hidden");
         infoColors.textContent = "Esta opción contiene 375 colores";
       }
 
-      //Mensaje para el sistema RGB
+      //Message to the RGB system
       if (rgbSpan.classList.contains("active-option")) {
         infoColors.classList.remove("hidden");
         infoColors.textContent = "Esta opción contiene 125 colores";
       }
     }
 
-    //Se fija la opción "hexadecimal"
+    //Set the "hexadecimal" option
     if (e.target === hexadecimalSpan) {
       rgbaSpan.classList.remove("active-option");
       rgbSpan.classList.remove("active-option");
       hexadecimalSpan.classList.add("active-option");
 
-      //Mensaje para la opción "infinite colors"
+      //Message for the "infinite colors" option
       if (infiniteColorsSpan.classList.contains("active-option")) {
         infoColors.classList.remove("hidden");
         infoColors.textContent = "Esta opción contiene 343 colores";
       }
 
-      //Mensaje para la opción "Finite colors"
+      //Message for the "Finite colors" option
       if (finiteColorsSpan.classList.contains("active-option")) {
         infoColors.classList.remove("hidden");
         infoColors.textContent = "Esta opción contiene 27 colores";
       }
     }
 
-    //Se fija la opción "RGB"
+    //Set the "RGB" option
     if (e.target === rgbSpan) {
       rgbaSpan.classList.remove("active-option");
       hexadecimalSpan.classList.remove("active-option");
       rgbSpan.classList.add("active-option");
 
-      //Mensaje para la opción "Infinite colors"
+      //Message for the "Infinite colors" option
       if (infiniteColorsSpan.classList.contains("active-option")) {
         infoColors.classList.remove("hidden");
         infoColors.textContent = "Esta opción contiene 16'581.375 colores";
       }
 
-      //Mensaje para la opción "Finite colors"
+      //Message for the "Finite colors" option
       if (finiteColorsSpan.classList.contains("active-option")) {
         infoColors.classList.remove("hidden");
         infoColors.textContent = "Esta opción contiene 125 colores";        
       }
     }
 
-    //Se fija la opción "RGBA"
+    //Set the "RGBA" option
     if (e.target === rgbaSpan) {
       hexadecimalSpan.classList.remove("active-option");
       rgbSpan.classList.remove("active-option");
       rgbaSpan.classList.add("active-option");
 
-      //Mensaje para la opción "Infinite colors"
+    //Message for the "Infinite colors" option
       if (infiniteColorsSpan.classList.contains("active-option")) {
         infoColors.classList.remove("hidden");
         infoColors.textContent = "Esta opción contiene 67'108.864 colores";
       }
 
-      //Mensaje para la opción "Finite colors"
+      //Message for the "Finite colors" option
       if (finiteColorsSpan.classList.contains("active-option")) {
         infoColors.classList.remove("hidden");
         infoColors.textContent = "Esta opción contiene 375 colores";
       }
     }
 
-    /********** Sistema hexadecimal ************/
-    //Si está seleccionado "Infinite colors" y además se selecciona "hexadecimal"
+    /********** hexadecimal system ************/
+    //If "Infinite colors" is selected and also "hexadecimal" is selected
     if (
       e.target === changeBtn &&
       infiniteColorsSpan.classList.contains("active-option") &&
@@ -145,7 +145,7 @@ function changeColor() {
       infoColors.textContent = "Esta opción contiene 343 colores";
     }
 
-    //Si está seleccionado "Finite colors" y además se selecciona "hexadecimal"
+    //If "Finite colors" is selected and also "hexadecimal" is selected
     if (
       e.target === changeBtn &&
       finiteColorsSpan.classList.contains("active-option") &&
@@ -174,8 +174,8 @@ function changeColor() {
       infoColors.textContent = "Esta opción contiene 27 colores";
     }
 
-    /********** Sistema RGBA ************/
-    //Si está seleccionado "Infinite colors" y además se selecciona "RGBA"
+    /********** RGBA system ************/
+    //If "Infinite colors" is selected and also "RGBA" is selected
     if (
       e.target === changeBtn &&
       infiniteColorsSpan.classList.contains("active-option") &&
@@ -194,7 +194,7 @@ function changeColor() {
       infoColors.textContent = "Esta opción contiene 67'108.864 colores";
     }
 
-    //Si está seleccionado "Finite colors" y además se selecciona "RGBA"
+    //If "Finite colors" is selected and also "RGBA" is selected
     if (
       e.target === changeBtn &&
       finiteColorsSpan.classList.contains("active-option") &&
@@ -214,8 +214,8 @@ function changeColor() {
       infoColors.textContent = "Esta opción contiene 375 colores";
     }
 
-    /***********Sistema RGB***********/
-    //Si esta seleccionado "infinite colors" y además se selecciona "RGB"
+    /*********** RGB system ***********/
+    //If "infinite colors" is selected and also "RGB" is selected
     if (
       e.target === changeBtn &&
       infiniteColorsSpan.classList.contains("active-option") &&
@@ -231,7 +231,7 @@ function changeColor() {
       infoColors.textContent = "Esta opción contiene 16'581.375 colores";
     }
 
-    //Si esta seleccionado "Finite colors" y además se selecciona "RGB"
+    //If "Finite colors" is selected and also "RGB" is selected
     if (
       e.target === changeBtn &&
       finiteColorsSpan.classList.contains("active-option") &&

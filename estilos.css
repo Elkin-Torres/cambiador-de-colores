@@ -1,10 +1,9 @@
-/* Reset del documento */
+/*Document reset starts*/
 
 :root {
   --mainColor: black;
   --secondColor: #2e94b9;
   --thirdcolor: #dbd8e3;
-  /* Tipografía */
   --tipo-principal: sans-serif;
   --tipo-secundaria: Verdana;
 }
@@ -53,9 +52,9 @@ body {
   line-height: 1.6;
   background-color: var(--thirdcolor);
 }
+/*Document reset ends*/
 
-/* Estilos */
-
+/* styles */
 header {
   display: flex;
   align-items: center;
@@ -118,7 +117,7 @@ h1 {
 .option-colors {
   width: 60%;
 }
-/*  */
+
 .bgShadow {
   border-radius: 4px;
 }
